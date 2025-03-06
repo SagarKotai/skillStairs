@@ -17,7 +17,7 @@ const Hero = () => {
         gsap.from(titleRef.current, {
           
             opacity:0,
-            duration: 3,
+            duration: 2,
             repeat: -1,
            
         });
@@ -34,12 +34,18 @@ const Hero = () => {
 
     useEffect(() => {
         gsap.from(charRefs.current, {
+            opacity:0,
            
-            duration: 0.1,
+            duration: 0.3,
             opacity:1,
             y: 50,
+<<<<<<< HEAD
             stagger: 0.04,
             
+=======
+            stagger: 0.08,
+            repeat: -1,
+>>>>>>> ac901d901f7954c2018961a03fa168308bcc2b69
             delay:1
          
         });
