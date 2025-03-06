@@ -33,6 +33,7 @@ const Hero = () => {
 
     useEffect(() => {
         gsap.from(charRefs.current, {
+            opacity:0,
            
             duration: 0.3,
             opacity:1,
