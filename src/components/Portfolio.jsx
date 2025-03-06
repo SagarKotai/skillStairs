@@ -47,7 +47,7 @@ const Portfolio = () => {
         <div className='min-h-screen bg-gradient-to-r from-orange-50 to-blue-100 flex items-center justify-center'>
             <div className='container mx-auto p-6'>
                 <h1 className='text-4xl font-bold text-center text-gray-900 mb-8'>
-                    Our Portfolio
+                    OUR PORTFOLIO
                 </h1>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full'>
                     {projects.map((project, index) => (
