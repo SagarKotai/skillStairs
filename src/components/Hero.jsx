@@ -47,7 +47,7 @@ const Hero = () => {
 
     return (
         <div className="relative min-h-screen bg-cover bg-center flex flex-col md:flex-row justify-between items-center">
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-100 to-white"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-orange-200 to-white"></div>
             <div className="relative z-10 p-8 max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
                     <div ref={titleRef} className="text-blue-800">SkillStairs</div>
