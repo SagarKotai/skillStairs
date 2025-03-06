@@ -5,6 +5,7 @@ import './Hero.css';
 import ContactUs from './ContactUs';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { SiGmail } from "react-icons/si";
 
 const Hero = () => {
     const splittedText = "SkillStairs".split("");
@@ -38,7 +39,7 @@ const Hero = () => {
             opacity:1,
             y: 50,
             stagger: 0.04,
-            repeat: -1,
+            
             delay:1
          
         });
@@ -91,8 +92,8 @@ const Hero = () => {
                         </a>
                     </span>
                     <span>
-                        <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer">
-                            <FaTelegram />
+                        <a href="mailto:hjdshfj.com" target="_blank" rel="noopener noreferrer">
+                        <SiGmail />
                         </a>
                     </span>
                 </div>

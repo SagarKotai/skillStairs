@@ -1,7 +1,7 @@
 import React from 'react';
-import socialMedia from '../assets/socialmedia.mp4';
+
 import './Hero.css';
-import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
 import { AiOutlineStock } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
