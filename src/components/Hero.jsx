@@ -19,6 +19,7 @@ const Hero = () => {
             opacity:0,
             duration: 2,
             repeat: -1,
+            yoyo:true,
            
         });
     });
@@ -52,11 +53,11 @@ const Hero = () => {
                     <div ref={titleRef} className="text-blue-800">SkillStairs</div>
                     <br /><br />
                     <span className='text-black'>We are</span>
-                    <div className="text-blue-700 text-6xl md:text-9xl">
+                    <div className=" text-6xl md:text-9xl">
                         {splittedText.map((char, index) => (
                             <span
                                 ref={(el) => (charRefs.current[index] = el)}
-                                className='inline-block'
+                                className='inline-block  even:bg-gray-800  odd:bg-blue-700 text-transparent bg-clip-text'
                                 key={index}
                             >
                                 {char}
