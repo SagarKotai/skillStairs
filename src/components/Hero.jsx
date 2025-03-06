@@ -57,7 +57,7 @@ const Hero = () => {
                         {splittedText.map((char, index) => (
                             <span
                                 ref={(el) => (charRefs.current[index] = el)}
-                                className='inline-block  even:bg-gray-800  odd:bg-blue-700 text-transparent bg-clip-text'
+                                className='inline-block  even:bg-gray-800  odd:bg-blue-900 text-transparent bg-clip-text'
                                 key={index}
                             >
                                 {char}
