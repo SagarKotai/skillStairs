@@ -10,7 +10,7 @@ import { SiGmail } from "react-icons/si";
 const Hero = () => {
     const splittedText = "SkillStairs".split("");
     const titleRef = useRef();
-    const imgRef = useRef();
+   
     const charRefs = useRef([]);
 
     useGSAP(() => {
@@ -19,25 +19,17 @@ const Hero = () => {
             opacity:0,
             duration: 2,
             repeat: -1,
-            yoyo:true,
+            yoyo:true
            
         });
     });
 
-    // useGSAP(() => {
-    //     gsap.from(imgRef.current, {
-    //         scale: 0.2,
-    //         duration: 4,
-    //         repeat: -1,
-    //         yoyo: true,
-    //     });
-    // });
+   
 
     useEffect(() => {
         gsap.from(charRefs.current, {
             opacity:0,
-         duration: 0.3,
-            opacity:1,
+            duration: 0.3,
             y: 50,
             stagger: 0.08,
             delay:1
@@ -50,14 +42,14 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-orange-200 to-white"></div>
             <div className="relative z-10 p-8 max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                    <div ref={titleRef} className="text-blue-800">SkillStairs</div>
+                    <div ref={titleRef} className="text-blue-800" >SkillStairs</div>
                     <br /><br />
                     <span className='text-black'>We are</span>
                     <div className=" text-6xl md:text-9xl">
                         {splittedText.map((char, index) => (
                             <span
                                 ref={(el) => (charRefs.current[index] = el)}
-                                className='inline-block  even:bg-gray-800  odd:bg-blue-900 text-transparent bg-clip-text'
+                                className='inline-block  bg-gradient-to-r from-blue-800 to-blue-400 text-transparent bg-clip-text'
                                 key={index}
                             >
                                 {char}
@@ -82,24 +74,28 @@ const Hero = () => {
                 <br />
                 <div className='flex text-3xl gap-2 my-5'>
                     <span>
-                        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/skillstairs.co" target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a>
                     </span>
                     <span>
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="http://www.linkedin.com/in/varunsharma0505" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin />
                         </a>
                     </span>
                     <span>
-                        <a href="mailto:hjdshfj.com" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:stairsskill@gmail.com" target="_blank" rel="noopener noreferrer">
                         <SiGmail />
                         </a>
                     </span>
                 </div>
             </div>
-            <div className='hidden md:block md:w-[70%]'>
-                <img ref={imgRef} className='rounded-3xl opacity-100 mt-5 mr-9 border-black backdrop-blur-3xl w-[90%] md:w-auto' src={hero} alt="heroImg" />
+
+           
+            <div className='hidden md:block md:w-[70%] '>
+
+              
+                <img  className='rounded-3xl opacity-100 mt-5 mr-9 border-black backdrop-blur-3xl w-[90%] md:w-auto' src={hero} alt="heroImg" />
             </div>
         </div>
     );
