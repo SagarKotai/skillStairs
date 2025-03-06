@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className = 'overflow-x-hidden'>
       <div ref={cursorRef} className='cursor'></div>
       <Hero />
       <OurServices />
