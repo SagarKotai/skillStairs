@@ -52,7 +52,7 @@ const OurServices = () => {
 
     return (
         <div className="container min-w-screen  min-h-screen bg-gradient-to-r align-middle from-blue-100 to-orange-50 py-6 flex items-center justify-center flex-col">
-   <div>      <h1 className= "font-bold text-4xl flex justify-center items-baseline my-6 ">Our Services</h1></div>
+   <div>      <h1 className= "font-bold text-4xl flex justify-center items-baseline my-6 ">OUR SERVICES</h1></div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16 align-middle w-[80%]  " >
                 {services && services.map((service, index) => (
                     <div 
