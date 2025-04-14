@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
-import hero from '../assets/hero.jpg';
+import hero from '../assets/hero.png';
+
 import './Hero.css';
 import ContactUs from './ContactUs';
 import gsap from 'gsap';
@@ -42,8 +43,8 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-orange-200 to-white"></div>
             <div className="relative z-10 p-8 max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                    <div ref={titleRef} className="text-blue-800" >SkillStairs</div>
-                    <br /><br />
+                    <div  className="text-gray-600  font-bold sour-gummy-new " >Stairs helping to uplift your skills🚀</div>
+                   <br /> 
                     <span className='text-black'>We are</span>
                     <div className=" text-6xl md:text-9xl">
                         {splittedText.map((char, index) => (
@@ -92,10 +93,10 @@ const Hero = () => {
             </div>
 
            
-            <div className='hidden md:block md:w-[70%] '>
+            <div className='hidden md:block md:w-[50%] mr-7 '>
 
               
-                <img  className='rounded-3xl opacity-100 mt-5 mr-9 border-black backdrop-blur-3xl w-[90%] md:w-auto' src={hero} alt="heroImg" />
+                <img  className='rounded-3xl opacity-100 mt-5 mr-9 border-black backdrop-blur-3xl w-[200%] md:w-auto ' src={hero} alt="heroImg" />
             </div>
         </div>
     );

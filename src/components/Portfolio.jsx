@@ -49,7 +49,7 @@ const Portfolio = () => {
                 <h1 className='text-4xl font-bold text-center text-gray-900 mb-8'>
                     OUR PORTFOLIO
                 </h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-32 w-full'>
                     {projects.map((project, index) => (
                         <div key={index} className='cursor-pointer p-4 transition duration-300 hover:scale-105'>
                             {project.video ? (

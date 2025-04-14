@@ -22,7 +22,7 @@ const ContactUs = () => {
                 </div>
                 <div className='m-10'>
                     <div className='text-4xl text-blue-500 hover:text-gray-400 m-5 font-bold text-wrap'>Fill out Google Form</div>
-                    <div className="my-5"><a className='text-xl text-gray-500 hover:text-gray-400 m-5 underline' href="https://docs.google.com/forms/d/e/1FAIpQLSds4xtiL7DVU--rVjXkttTR4EnEVhd5MpUYW4b_GYnJoyxAwA/viewform?usp=header">Google Form</a></div>
+                    <div className="my-5"><a className='text-xl text-gray-500 hover:text-gray-400 m-5 underline' href="https://forms.gle/ApsXPWGW3pxcBhR69">Google Form</a></div>
                 </div>
                 <div className='flex justify-center text-3xl m-2 gap-6 my-5'>
                     <span>
